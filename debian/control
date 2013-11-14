@@ -25,7 +25,7 @@ Description: set of core débile builder routines
 
 Package: debile-slave
 Architecture: all
-Depends: python-debile, python-firehose, ${misc:Depends}, ${python:Depends}
+Depends: python-debile, python-firehose, python-yaml, ${misc:Depends}, ${python:Depends}
 Recommends:
  python-requests,
  dpkg-dev,
@@ -42,7 +42,6 @@ Recommends:
  python-schroot,
 # for sbuild (and others)
  python-lxml,
- python-yaml,
  python-dput (>= 1.7~),
 Description: slave for the débile package builder system
  The débile client/server software is designed to help moderate to
